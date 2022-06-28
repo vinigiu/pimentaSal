@@ -1,0 +1,26 @@
+<%- include('C:/Users/vinig/Desktop/meusProjetos/praticaExpress/pimentaSal/views/partials/header.ejs') %>
+
+<!-- Page content -->
+<div class="ps-content">
+
+    <!-- Menu Section -->
+    <div class="ps-row ps-padding-64" id="menu">
+      <div class="ps-col l6 ps-padding-large">
+        <h1 class="ps-center"> <%= prato.nome %></h1>
+        <br />
+        <h4><%= prato.description %></h4>
+        <p class="ps-text-grey">
+          <%= prato.price %>
+        </p>
+      </div>
+
+      <div class="ps-col l6 ps-padding-large ps-img-menu">
+        <img
+          src= <%- prato.image %>
+          class="ps-round ps-image ps-opacity-min"
+          alt="Menu"
+        />
+      </div>
+    </div>
+
+<%- include('C:/Users/vinig/Desktop/meusProjetos/praticaExpress/pimentaSal/views/partials/footer.ejs') %>
